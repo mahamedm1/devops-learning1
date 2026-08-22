@@ -4,17 +4,15 @@
 
 **Solution:**
 ```
-cat  
+cat ./"--spaces in this filename=="  or  cat ./--spaces\ in\ this\ filename-- 
 ```
 
 **Explanation:**
-- cat will expect a standard input if you run the command "cat" - as explained in "man cat"
-- So you must place "./" before "-" 
-- This tells cat to open the file in this directory named "-"
+- cat will not open a file with spaces present in it's name. It will assume each word is a separate argument
+- So you must enclose the filename with quotation marks or place a backslash after each word and place a space in between them.
 
 
-**Password:** PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+**Password:** 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
 
-**What I learned:** I learned that you need to specify to the cat command to open the file located in this directory rather than just naming the file after the command. Otherwise it will expect an input from the user
-
+**What I learned:** I learned that you cannot use cat to view the contents of a file that contains a space in it's name. To bypass this, you must use quotation marks or place a backslash after each word.
 
