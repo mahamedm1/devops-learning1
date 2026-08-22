@@ -1,4 +1,4 @@
-## Bandit Level00-to-01
+## Bandit Level 0 -> Level 1
 **Challenge:** Find the password located in the README file to advance to the level 1
 
 **Solution:**
