@@ -1,20 +1,19 @@
 ## Bandit Level 1 -> Level 2 
 
-**Challenge:** Connect to the bandit server
+**Challenge:** Open the file title "-" and uncover the password within
 
 **Solution:**
 ```
-ssh bandit0@bandit.labs.overthewire.org -p2220
-# Password: bandit0
+cat ./- 
 ```
 
 **Explanation:**
-- ssh allows you to connect to the bandit server remotely
-- bandit0 is the username we are logging in as 
-- bandit.labs.overthewire.labs is the hostname of the server
-- -p 2220 is the port we use to connect to the server
+- cat will expect a standard input if you run the command cat -
+- So you must place "./" before "-" 
+- This tells cat to open the file in this directory named "-"
 
-**Password:** bandit0
 
-**What I learned:** I learned how to connect to a server remotely using ssh.
+**Password:** PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+
+**What I learned:** I learned that you need to specify to the command cat to open the file located in this directory rather than just naming the file after the command. Otherwise it will expect an input
 
