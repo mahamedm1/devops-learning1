@@ -5,7 +5,7 @@
 ```
 cat README
 ```
-# Password: 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
+**Password:** 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
 
 **Explanation:**
 cat allows you to open a file and read it's contents and the password was located in the README file.
