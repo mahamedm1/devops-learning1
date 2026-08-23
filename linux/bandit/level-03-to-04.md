@@ -1,19 +1,19 @@
 ## Bandit Level 3 -> Level 4
 
-**Challenge:** Open the file called "--spaces in this filename--"  and uncover the password within
+**Challenge:** Open the "inhere" directory and uncover the password located in the hidden file
 
 **Solution:**
 ```
-cat ./"--spaces in this filename=="  or  cat ./--spaces\ in\ this\ filename-- 
+ls -a
+cat ...Hiding-From-You
 ```
 
 **Explanation:**
-- cat will not open a file with spaces present in it's name. It will assume each word is a separate argument
-- So you must enclose the filename with quotation marks or place a backslash after each word and place a space in between them.
+- ls alone will not list any hidden files. You must add the -a flag which lists all files in the directory
 
-
-**Password:** 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+**Password:** xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
 
 **Errors Encountered:** 
+When I ran ls alone nothing was displayed in the terminal.
 
-**What I learned:** I learned that you cannot use cat to view the contents of a file that contains a space in it's name. To bypass this, you must use quotation marks or place a backslash after each word.
+**What I learned:** I learned that you cannot when looking for hidden files I must use the -a flag when running ls.
