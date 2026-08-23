@@ -1,9 +1,6 @@
 ## Bandit Level 7 -> Level 8
 
 **Challenge:** Find the password located next to the word "millionth" in the data.txt file
-- owned by user bandit7
-- owned by group bandit6
-- 33 bytes in size
 
 **Solution:**
 ```
