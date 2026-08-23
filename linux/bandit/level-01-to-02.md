@@ -17,3 +17,4 @@ cat ./-
 
 **What I learned:** I learned that you need to specify to the cat command to open the file located in this directory rather than just naming the file after the command. Otherwise it will expect an input from the user
 
+**Errors Encountered:** When I ran "cat -" initially, nothing occurred and then I realised I was prompted to input something in the terminal. 
