@@ -31,7 +31,8 @@ file: Cannot open `ile07' (No such file or directory)
 file: Cannot open `ile08' (No such file or directory)
 file: Cannot open `ile09' (No such file or directory)
 
-**What I learned:** My initial logic was to cat every file. However, that is inefficent and I knew there must have been a quicker way to solve this. 
+**What I learned:** 
+My initial logic was to cat every file. However, that is inefficent and I knew there must have been a quicker way to solve this. 
 On the overthewire bandit website, it mentioned file to be one the commands you could use. I wrote man file, and found out it displays the file type. 
 So I knew I could use this to find the file containing readbale text and open it. But then I wrote " file *" with the thinking this would traverse through the current directory and this introduced me to the error presented above. 
 Then I realised I needed to specify this current directoy so I ran file ./*. 
