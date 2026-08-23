@@ -16,3 +16,4 @@ cat ./"--spaces in this filename=="  or  cat ./--spaces\ in\ this\ filename--
 
 **What I learned:** I learned that you cannot use cat to view the contents of a file that contains a space in it's name. To bypass this, you must use quotation marks or place a backslash after each word.
 
+**Errors Encountered:** 
