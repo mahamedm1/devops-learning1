@@ -1,6 +1,7 @@
 ## Bandit Level 12 -> 13
 
 **Challenge:** Find the password for the next level in the data.txt which is a hexdump of a file that has been repeatedly compressed
+
 **Solution:**
 ```
 xxd -r data.txt
