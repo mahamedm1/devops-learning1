@@ -1,10 +1,9 @@
 ## Bandit Level 9 -> Level 10
 
-**Challenge:** Find the password for the next level which is one of the few human-readable strings, preceded by several ‘=’ characters.
-
+**Challenge:** Find the password for the next level which is in a base64 encoded file
 **Solution:**
 ```
-strings data.txt | grep "="
+base64 -d data.txt
 
 ```
 
@@ -13,12 +12,12 @@ strings data.txt | grep "="
 - | feeds the output of strings data.txt to grep
 - grep "=" outputs any string containing "="
    
-**Password:** B0s2khmbT9u0geKuOoVGW3JZKhndE3BG
+**Password:** pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro
 
 **Errors Encountered:** 
-None. I initially ran strings data.txt but figured maybe there's a way where I can get strings with an "=" inside
+I ran base64 data.txt initially and thought that was the password. It wasn't. I checked man base64 and saw the -d flag. I used it to decode the string and got the password.
 
 
 **What I learned:** 
-strings outputs sequences of characters in a file to the terminal 
+base64 is an encoding that turns binary data to readable text so the data travels safely. That text in the data.txt file was encoded and base64 -d decoded it.
 
