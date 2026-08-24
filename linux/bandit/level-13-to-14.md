@@ -21,6 +21,7 @@ repeat until you find an ascii file type
 - cat data8 to open the file
    
 **Password:** qQYQiHOBPR8zR61qxYqX45quvihF2uzk
+
 **Errors Encountered:** 
 - First error was when I tried decompress with gzip and bzip2 I did not have the correct suffix. 
 - Another error was when I was running tar -x to extract the archived files, I didn't use the -f flag to    specify what file I am executing
