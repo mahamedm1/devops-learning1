@@ -3,7 +3,7 @@
 **Challenge:** Find the password for the next level in the data.txt which is a hexdump of a file that has been repeatedly compressed
 **Solution:**
 ```
-xxd data.txt
+xxd -r data.txt
 file data.txt
 mv data.txt data.gz && gzip -d data.gz
 mv data data.bz2 && bzip2 -d data.bz2
