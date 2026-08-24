@@ -1,4 +1,4 @@
-## Bandit Level 9 -> Level 10
+## Bandit Level 10 -> Level 11
 
 **Challenge:** Find the password for the next level which is in a base64 encoded file
 **Solution:**
