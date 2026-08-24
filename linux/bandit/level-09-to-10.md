@@ -1,25 +1,24 @@
 ## Bandit Level 9 -> Level 10
 
-**Challenge:** Find the password for the next level which is stored in the file data.txt and is the only line of text that occurs only once
+**Challenge:** Find the password for the next level which is one of the few human-readable strings, preceded by several ‘=’ characters.
 
 **Solution:**
 ```
-sort data.txt | uniq -u
+strings data.txt | grep "="
 
 ```
 
 **Explanation:**
-- sort data.txt to sort the file in alphabetical order
-- | feeds the output of sort data.txt to uniq -u
-- uniq -u to display only unique lines
+- strings outputs any sequence of printable characters
+- | feeds the output of strings data.txt to grep
+- grep "=" outputs any string containing "="
    
-**Password:** EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl
+**Password:** B0s2khmbT9u0geKuOoVGW3JZKhndE3BG
 
 **Errors Encountered:** 
-I didn't know how to approach this. I read the manual for strings, grep and sort. I figured I would not need grep since I have nothing to base the pattern search off of.
-Strings too since the whole file is text. So I have to use sort. But I did not know how to use it further.
+None. I initially ran strings data.txt but figured maybe there's a way where I can get strings with an "=" inside
 
 
 **What I learned:** 
-Sort sorts the file alphabetically. "|" is a pipe which takes the std output and feeds it to uniq -u. 
+strings outputs sequences of characters in a file to the terminal 
 
