@@ -12,8 +12,8 @@ ssh bandit14@bandit.labs.overthewire.org -p2220 -i private.txt
 - @bandit.labs.overthewire.org is the hostname
 - -p2220 the port we connect to
 - -i private.txt select the file to access the private key
-- chmod g=- o=-
-- 
+- chmod g=- o=- remove permissions from groups and others
+
    
 **Password:** aaWecNkG4FhxJQxz07uiwzVP6bJiYS65
 
