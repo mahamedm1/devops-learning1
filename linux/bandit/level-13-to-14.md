@@ -1,6 +1,7 @@
 ## Bandit Level 13 -> 14
 
 **Challenge:** Use the private ssh key to log into bandit14
+
 **Solution:**
 ```
 ssh bandit14@bandit.labs.overthewire.org -p2220 -i private.txt 
