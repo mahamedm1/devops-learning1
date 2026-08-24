@@ -1,6 +1,7 @@
 ## Bandit Level 14 -> 15
 
 **Challenge:** Retrieve the password by submitting the password of the current level to port 30000 on localhost.
+
 **Solution:**
 ```
 ssh bandit14@bandit.labs.overthewire.org -p2220 -i private.txt 
