@@ -15,7 +15,7 @@ ssh bandit14@bandit.labs.overthewire.org -p2220 -i private.txt
 - chmod g=- o=-
 - 
    
-**Password:** n/a
+**Password:** aaWecNkG4FhxJQxz07uiwzVP6bJiYS65
 
 **Errors Encountered:** 
 - I initially tried to open a new session and access the sshkey.private from level 13 but of course i was met with directory not found.
