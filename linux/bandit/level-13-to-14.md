@@ -1,32 +1,28 @@
 ## Bandit Level 13 -> 14
 
-**Challenge:** Find the password for the next level in the data.txt which is a hexdump of a file that has been repeatedly compressed
+**Challenge:** Use the private ssh key to log into bandit14
 **Solution:**
 ```
-xxd -r data.txt
-file data.txt
-mv data.txt data.gz && gzip -d data.gz
-mv data data.bz2 && bzip2 -d data.bz2
-tar -xf data
-repeat until you find an ascii file type
-// cat data8
+ssh bandit14@bandit.labs.overthewire.org -p2220 -i private.txt 
 ```
 
 **Explanation:**
-- xxd reverts hexadecimal file to binary 
-- file tells me what file type it is to let me know what command to use next 
-- gzip -d decompresses gzip files
-- bzip2 -d decompresses bzip2 files
-- tar -xf extracts the archives allowing me to inspect it
-- cat data8 to open the file
+- ssh allows you to connect to a server remotely 
+- bandit14 is the username
+- @bandit.labs.overthewire.org is the hostname
+- -p2220 the port we connect to
+- -i private.txt select the file to access the private key
+- chmod g=- o=-
+- 
    
-**Password:** qQYQiHOBPR8zR61qxYqX45quvihF2uzk
+**Password:** n/a
 
 **Errors Encountered:** 
-- First error was when I tried decompress with gzip and bzip2 I did not have the correct suffix. 
-- Another error was when I was running tar -x to extract the archived files, I didn't use the -f flag to    specify what file I am executing
+- I initially tried to open a new session and access the sshkey.private from level 13 but of course i was met with directory not found.
+  So I copied the private key and pasted it in a private.txt file in my home server.
+- Another error was when I was tried to ssh into bandit14 I was told that others cannot have access to the private key so I could not login. So I used chmod to remove permissions from group and others
   
 
 **What I learned:** 
-I learned how to revert hexdump files into binary and how to decompress them depending on what file types they are.
+I learned how to ssh into a server using a file containing a private key, also remove permissions of a file to proceed.
 
