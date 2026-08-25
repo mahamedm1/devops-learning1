@@ -29,7 +29,9 @@ Notes from my journey learning Bash Scripting as a part of my DevOps studies
 - **Mahamed**
 
   **Spurs Arsenal Chelsea**
--   and as we echo the variable **Name** and **Teams**
+
+### Parameters
+
 
 
 
