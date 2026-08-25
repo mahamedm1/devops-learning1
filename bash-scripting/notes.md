@@ -2,7 +2,9 @@
 Notes from my journey learning Bash Scripting as a part of my DevOps studies
 
 ## Contents
-- [Shebang] (# shebang)
+- Shebang
+- Variables & Parameters
+  
 
 ---
 
