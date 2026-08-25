@@ -26,8 +26,9 @@ Notes from my journey learning Bash Scripting as a part of my DevOps studies
   echo $Teams**
   
 - When you run your script on the terminal it would output:
-- **Mahamed
-    Spurs Arsenal Chelsea**
+- **Mahamed**
+
+  **Spurs Arsenal Chelsea**
 -   and as we echo the variable **Name** and **Teams**
 
 
