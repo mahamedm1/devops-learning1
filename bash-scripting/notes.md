@@ -42,6 +42,30 @@ The sum of 1 and 2 = 3**
 
 - Note for arithmetic calculations you must prepend it with a $(( and append with )).
 
+## If Statements
+- If statement are use when conditions are involved. They let your script make a decision. If a condition is met then you run the code if not then it could cease or run something else.
+- Example:
+  **Age=25
+  If [ $age -ge 18 ]
+  then
+  echo "You are an adult"
+  else
+  echo "You are a minor
+  fi**
+  
+- This code block essentially says if the age is greater than or equal to 18 print "You are an adult" or print "You are a minor"
+- The assignment variables for bash are:
+  - eq -> equals to
+  - ne - not equal to
+  - lt -> less than
+  - gt -> greater than
+  - le -> less than or equal to
+  - ge -> greater than or equal to
+ 
+    
+  
+
+
 
 
 
