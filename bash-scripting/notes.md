@@ -40,7 +40,7 @@ Notes from my journey learning Bash Scripting as a part of my DevOps studies
 **./script.sh 1 2
 The sum of 1 and 2 = 3**
 
-- Note for arithmetic calculations you must prepend it with a $(( and append with )).
+- Note for arithmetic calculations you must prepend it with a (( and append with )).
 
 ## Conditionals
 
@@ -93,13 +93,22 @@ The sum of 1 and 2 = 3**
 
 ### While Loops
 - While loops allow to repeatedly run a specific code block as long as a certain condition remains true. Once the condition becomes false, the loop breaks.
-- While loop template
-
+- While loop template:
   **While condition
   do**
-
+  # Code to be executed
   **done**
 
+### For Loops
+- For loops allow you to repeatedly run through a specific code block for each element in a given collection or sequence. Once there are no more elements to iterate through, the loop halts.
+- For loop template:
+- **For ((i=1; i<=5; i++))
+       do
+       # Code to be executed
+      done**
+### Break & Continue
+- The break command immediately exits the entire loop. Any code after the loop can still be executed.
+- The continue command completely disregards the rest of the iteration and returns to the top of the loop to begin the next iteration. So it's good if you want to skip things.
  
     
   
