@@ -87,7 +87,8 @@ The sum of 1 and 2 = 3**
               fi
       else
         echo "You are ineligible"
-      fi```
+      fi
+      ```
     
 ## Loops
 
