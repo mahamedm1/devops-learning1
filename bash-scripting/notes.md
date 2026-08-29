@@ -89,7 +89,16 @@ The sum of 1 and 2 = 3**
       echo "You are ineligible"
       fi
     
+## Loops
 
+### While Loops
+- While loops allow to repeatedly run a specific code block as long as a certain condition remains true. Once the condition becomes false, the loop breaks.
+- While loop template
+
+  **While condition
+  do**
+
+  **done**
 
  
     
