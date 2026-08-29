@@ -23,8 +23,9 @@ Notes from my journey learning Bash Scripting as a part of my DevOps studies
 - Variables are containers that store data such as strings, numbers and arrays. They are essential as they provide a way to store values written in them that can later be accessed in the script.
 - Example:
   **Name = "Mahamed"
-    Teams = ("Spurs", "Arsenal", "Chelsea")
-  echo $Name
+    Teams = ("Spurs", "Arsenal", "Chelsea")**
+
+  **echo $Name
   echo $Teams**
   
 - When you run your script on the terminal it would output:
