@@ -35,10 +35,13 @@ Notes from my journey learning Bash Scripting as a part of my DevOps studies
 ### Parameters
 - Parameters are values you can input when running a script. You reference it in the script by prepending with $1 for the first input and $2 for the second
 - Example:
-  **echo "The sum of $1 and $2 = $(($1 + $2))**
+  ```
+  echo "The sum of $1 and $2 = $(($1 + $2))
+  ```
 - This will output the sum of which ever two numbers you input when you run the script.
-**./script.sh 1 2
-The sum of 1 and 2 = 3**
+``` ./script.sh 1 2
+The sum of 1 and 2 = 3
+```
 
 - Note for arithmetic calculations you must prepend it with a (( and append with )).
 
