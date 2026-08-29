@@ -95,12 +95,13 @@ The sum of 1 and 2 = 3**
 ### While Loops
 - While loops allow to repeatedly run a specific code block as long as a certain condition remains true. Once the condition becomes false, the loop breaks.
 - While loop template:
-  **While condition
-  do**
-  # Code to be executed
-  **done**
+ **While condition
+  do
+  #Code to be executed
+  done**
 
-### For Loops
+#
+## For Loops
 - For loops allow you to repeatedly run through a specific code block for each element in a given collection or sequence. Once there are no more elements to iterate through, the loop halts.
 - For loop template:
 - **For ((i=1; i<=5; i++))
