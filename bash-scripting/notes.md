@@ -25,8 +25,7 @@ Notes from my journey learning Bash Scripting as a part of my DevOps studies
   **Name = "Mahamed"
     Teams = ("Spurs", "Arsenal", "Chelsea")**
 
-  **echo $Name
-  echo $Teams**
+  **echo $Name $Teams**
   
 - When you run your script on the terminal it would output:
 - **Mahamed**
