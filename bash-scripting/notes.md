@@ -42,7 +42,9 @@ The sum of 1 and 2 = 3**
 
 - Note for arithmetic calculations you must prepend it with a $(( and append with )).
 
-## If Statements
+## Conditionals
+
+### If Statements
 - If statement are use when conditions are involved. They let your script make a decision. If a condition is met then you run the code if not then it could cease or run something else.
 - Example:
   **age=$1
