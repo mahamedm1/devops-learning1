@@ -75,18 +75,31 @@ The sum of 1 and 2 = 3**
   - Nested If statements allow you to make a sequence of decisions step by step where each decision depends on the previous one. This is mainly used for complex decision making.
   - Example:
       age=19
+    
       grade=79
+    
       if [ $age -ge 18]
+    
       then
+    
       echo "You are eligible"
+    
           if [ grade -ge 75 ]
+    
           then
+    
           echo "You have made it"
+    
           else
+    
           echo "You have not made it"
+    
           fi
+    
       else
+    
       echo "You are ineligible"
+    
       fi
     
 ## Loops
