@@ -122,7 +122,7 @@ The sum of 1 and 2 = 3
 - The continue command completely disregards the rest of the iteration and returns to the top of the loop to begin the next iteration. So it's good if you want to skip things.
 
 
-### Functions and Inputs
+## Functions and Inputs
 - Functions are like mini programs in within bash scripts. They help turn code into modules, enhance script organisation and improve reusability. They contain a bunch of instructions that can be called and executed whenever needed. 
 - The syntax for a function is as follows:
 ```
@@ -144,7 +144,33 @@ The sum of 1 and 2 = 3
 **_Key note: you can reference variables inside quotation mark e.g.
   echo " First argument: $1" - This is because double quotation marks allow expansion meaning it allows you to replace the placeholder (the variable) with it's actual value whereas single quotes will take the code literally _**
 
+#### User Inputs
+- The variable read allows user input. Read pauses and waits for user input and stores the value in given variable.
+```
+  read name
+  # User inputs Harry
+  echo $name
+  # This will output harry
+```
+
+#### Handling Bad Data
+- Returning non zero messages after a conditional code block signals fail to the shell. To verify this you could echo a message in response. 
+
+##### Input Sanitization
+- Checking or validating user input before using it. Like checking something is a number and not a string.
 
 
+## Piping
+- Piping allows us to connect the output of one command as input to another
+- Example:
+```
+sort file.txt | grep "hello"
+```
+## Error Handling
+- Error Handling is a way to check for problems and handle it before it crashes your script.
 
+### Exit Codes
+- **exit 1** stops a script immediately and returns a failure code whereas **return** halts a function but lets the rest of the script continue.
+- **set -e** ends a script if a command returns a non zero exit status aka error code. You place it at the top of the script below the shebang.
+- **set- u** forces a bash script stop if it encounters an uninitialised variable to prevent you script in to running into problems due to missing data
 
