@@ -142,7 +142,8 @@ The sum of 1 and 2 = 3
 - To find out the count of positional arguments you use **$#**
 - To find out the script title you use **$0**
 **_Key note: you can reference variables inside quotation mark e.g.
-  echo " First argument: $1"_**
+  echo " First argument: $1" - This is because double quotation marks allow expansion meaning it allows you to replace the placeholder (the variable) with it's actual value whereas single quotes will take the code literally _**
+
 
 
 
