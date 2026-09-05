@@ -178,3 +178,11 @@ sort file.txt | grep "hello"
 - **set -x** is a debugging option that prints the command that's about to be executed into the terminal before being executed. **set +x** ends the debugging.
 - **set -eux** combines all three set options together.
 - **set -o pipefail** make the pipeline return failure if any command in the pipeline fails.
+
+## Environment & PATH
+- **PATH** tells the Shell which directories to search to find executable commands
+- To change a PATH permanently, you must append you .bashrc/.zhrc files with the export command and then source it in the terminal after. Example:
+```
+echo "export PATH=$PATH:~/my_scripts" >> ~/.bashrc
+source ~/.bashrc
+```
