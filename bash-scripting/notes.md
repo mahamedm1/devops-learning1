@@ -120,9 +120,22 @@ The sum of 1 and 2 = 3
 ### Break & Continue
 - The break command immediately exits the entire loop. Any code after the loop can still be executed.
 - The continue command completely disregards the rest of the iteration and returns to the top of the loop to begin the next iteration. So it's good if you want to skip things.
- 
-    
-  
+
+
+### Functions and Inputs
+- Functions are like mini programs in within bash scripts. They help turn code into modules, enhance script organisation and improve reusability. They contain a bunch of instructions that can be called and executed whenever needed. 
+- The syntax for a function is as follows:
+```
+  function_name() {
+
+    #code goes in here
+
+  }
+```
+
+
+
+
 
 
 
