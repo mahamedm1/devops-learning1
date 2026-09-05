@@ -132,11 +132,17 @@ The sum of 1 and 2 = 3
 
   }
 ```
+#### Local Variables
+- In bash, it's a common practice to use **Local Vabriables**. This is so that you don't accidentally overwrite a variable outside the scope of your function.
+- Using local keeps the variable scoped to just that function.
 
-
-
-
-
+#### Parameters
+- In a function you can pass the first argument in the script using **$1** notation and **$2** and so on if you to pass multiple arguments.
+- These positional parameters refer to what was passed into that function call
+- To find out the count of positional arguments you use **$#**
+- To find out the script title you use **$0**
+**_Key note: you can reference variables inside quotation mark e.g.
+  echo " First argument: $1"_**
 
 
 
