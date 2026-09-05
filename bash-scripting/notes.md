@@ -176,4 +176,5 @@ sort file.txt | grep "hello"
 - **set -e** ends a script if a command returns a non zero exit status aka error code. You place it at the top of the script below the shebang.
 - **set- u** forces a bash script stop if it encounters an uninitialised variable to prevent you script in to running into problems due to missing data
 - **set -x** is a debugging option that prints the command that's about to be executed into the terminal before being executed. **set +x** ends the debugging.
-
+- **set -eux** combines all three set options together.
+- **set -o pipefail** make the pipeline return failure if any command in the pipeline fails.
