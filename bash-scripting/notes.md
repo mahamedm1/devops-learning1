@@ -50,7 +50,7 @@ The sum of 1 and 2 = 3
 ## Conditionals
 
 ### If Statements
-- If statement are use when conditions are involved. They let your script make a decision. If a condition is met then you run the code if not then it could cease or run something else.
+- If statements are used when conditions are involved. They let your script make a decision. If a condition is met then you run the code if not then it could cease or run something else.
 - Example:
   **age=$1
   If [ $age -ge 18 ]
@@ -137,21 +137,23 @@ The sum of 1 and 2 = 3
 - Using local keeps the variable scoped to just that function.
 
 #### Parameters
-- In a function you can pass the first argument in the script using **$1** notation and **$2** and so on if you to pass multiple arguments.
+- In a function you can pass the first argument in the script using **$1** notation and **$2** and so on if you want to pass multiple arguments.
 - These positional parameters refer to what was passed into that function call
 - To find out the count of positional arguments you use **$#**
 - To find out the script title you use **$0**
-**_Key note: you can reference variables inside quotation mark e.g.
+**_ Key note: you can reference variables inside quotation marks e.g.
   echo " First argument: $1" - This is because double quotation marks allow expansion meaning it allows you to replace the placeholder (the variable) with it's actual value whereas single quotes will take the code literally _**
 
 #### User Inputs
-- The variable read allows user input. Read pauses and waits for user input and stores the value in given variable.
+- The variable **read** allows user input. **read** pauses and waits for user input and stores the value in given variable.
 ```
   read name
   # User inputs Harry
   echo $name
   # This will output harry
 ```
+
+- **read** also pulls text from redirected input like a file piped into it.
 
 #### Handling Bad Data
 - Returning non zero messages after a conditional code block signals fail to the shell. To verify this you could echo a message in response. 
@@ -174,7 +176,7 @@ sort file.txt | grep "hello"
 
 ### Set Options
 - **set -e** ends a script if a command returns a non zero exit status aka error code. You place it at the top of the script below the shebang.
-- **set- u** forces a bash script stop if it encounters an uninitialised variable to prevent you script in to running into problems due to missing data
+- **set -u** forces a bash script stop if it encounters an non initialised variable to prevent you script in to running into problems due to missing data
 - **set -x** is a debugging option that prints the command that's about to be executed into the terminal before being executed. **set +x** ends the debugging.
 - **set -eux** combines all three set options together.
 - **set -o pipefail** make the pipeline return failure if any command in the pipeline fails.
