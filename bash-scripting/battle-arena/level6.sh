@@ -9,3 +9,8 @@ else
     echo "No file provided"
 fi
 
+if [[ ! -f $file_name ]]; then
+    echo "File not found"
+exit 1
+fi
+
