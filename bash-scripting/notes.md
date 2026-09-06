@@ -186,3 +186,26 @@ sort file.txt | grep "hello"
 echo "export PATH=$PATH:~/my_scripts" >> ~/.bashrc
 source ~/.bashrc
 ```
+## Working With Files
+
+### Reading Files
+- There are two ways to read a file. Using **cat** and through **input redirection**
+
+### cat 
+- Using **cat** you would pipe cat filename with a while loop. Example:
+```
+  cat file_name.txt| while IFS= read -r line; do
+  echo "$line"
+  done
+```
+= This feeds the file content to the while loop where **IFS** preserves whitespaces and **read -r** ** ignores any backslashes and take the line literally.
+
+### Input Redirection
+- Using input redirection you  use the same while loop but at the end file is redirected into the loops standard input using the less-than operator. Example:
+  ```
+  while IFS= read -r line; do
+  echo "$line"
+  done < file_name.txt
+  ```
+- This redirects the file into the loops standard input and outputs it's contents.
+
