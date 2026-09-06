@@ -45,7 +45,7 @@ Notes from my journey learning Bash Scripting as a part of my DevOps studies
 The sum of 1 and 2 = 3
 ```
 
-- Note for arithmetic calculations you must prepend it with a (( and append with )).
+- Note for arithmetic calculations you must prepend it with a **((** and append with **))**.
 
 ## Conditionals
 
