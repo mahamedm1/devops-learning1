@@ -32,7 +32,7 @@ Notes from my journey learning Bash Scripting as a part of my DevOps studies
 - When you run your script on the terminal it would output:
 - **Mahamed**
 
-  **Spurs Arsenal Chelsea**
+- **Spurs Arsenal Chelsea**
 
 ### Parameters
 - Parameters are values you can input when running a script. You reference it in the script by prepending with $1 for the first input and $2 for the second
@@ -191,7 +191,7 @@ source ~/.bashrc
 ### Reading Files
 - There are two ways to read a file. Using **cat** and through **input redirection**
 
-### cat 
+#### cat 
 - Using **cat** you would pipe cat filename with a while loop. Example:
 ```
   cat file_name.txt| while IFS= read -r line; do
@@ -200,7 +200,7 @@ source ~/.bashrc
 ```
 = This feeds the file content to the while loop where **IFS** preserves whitespaces and **read -r** ** ignores any backslashes and take the line literally.
 
-### Input Redirection
+#### Input Redirection
 - Using input redirection you  use the same while loop but at the end file is redirected into the loops standard input using the less-than operator. Example:
   ```
   while IFS= read -r line; do
@@ -209,3 +209,12 @@ source ~/.bashrc
   ```
 - This redirects the file into the loops standard input and outputs it's contents.
 
+#### Writing Files
+- You can write into a file by using simple redirection.
+- You use the **>** operator prepending the file name to add whatever you've written inside it.
+- You will need to use the **>>** operator to add your entry into a new line.
+
+### File Checksums
+- A checksum is like a file's fingerprint, it generates a value based on the file’s contents. Each file has it's own unique checksum which changes if a file's content changes.
+- It verifies a file's integrity (whether the contents has been changed)
+- Commands such as **sha256sum** and **md5sum** can generate these values. 
