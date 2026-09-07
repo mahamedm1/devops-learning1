@@ -70,7 +70,7 @@ I also used **OverTheWire Bandit** to reinforce Linux concepts through hands-on 
 
 This gave me practical experience with:
 
-`ssh` • `find` • `grep` • `sort` • `uniq` • `strings` • `base64` • `tr` • 'pipes' • 'redirection' • 'permissions' • 'file searching' • 'telnet'
+`ssh` • `find` • `grep` • `sort` • `uniq` • `strings` • `base64` • `tr` • `pipes` • `redirection` • `permissions` • `file searching` • `telnet`
 
 ---
 
