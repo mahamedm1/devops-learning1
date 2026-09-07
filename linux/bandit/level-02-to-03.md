@@ -4,7 +4,7 @@
 
 **Solution:**
 ```
-cat ./"--spaces in this filename=="  or  cat ./--spaces\ in\ this\ filename-- 
+cat ./"--spaces in this filename--"  or  cat ./--spaces\ in\ this\ filename-- 
 ```
 
 **Explanation:**
