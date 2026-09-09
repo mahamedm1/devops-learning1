@@ -1,4 +1,4 @@
-## Bandit Level 6 -> Level 7
+## Bandit Level 5 -> Level 6
 
 **Challenge:** Find the password located in the inhere directory with the following properties:
 - human-readable
