@@ -10,9 +10,9 @@ I'm using this repository to document what I learn, practice core concepts, and 
 
 | Module            | Status         |
 | ----------------- | -------------- |
-| 🐧 Linux          | ✅ Completed    |
+| 🐧 Linux          | ✅ Completed   |
 | 📜 Bash Scripting | ✅ Completed    |
-| 🔀 Git            | 🔄 In Progress |
+| 🔀 Git            | ✅ Completed    |
 | 🌐 Networking     | ⏳ Upcoming     |
 | 🐳 Docker         | ⏳ Upcoming     |
 | ☁️ AWS            | ⏳ Upcoming     |
