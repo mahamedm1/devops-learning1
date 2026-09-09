@@ -112,11 +112,49 @@ Alongside the lessons, I wrote small scripts and exercises to practise using the
 
 ## 🔀 Git
 
-**Currently learning Git.**
+After building confidence with Linux and Bash scripting, I moved into Git to learn version control and understand how developers manage, track and collaborate on changes to code.
 
-This section will document my notes and practical exercises as I learn version control and how Git fits into a DevOps workflow.
+### Topics Covered
 
----
+- Initialising Git repositories
+- Staging and committing changes
+- Writing meaningful commit messages
+- Viewing repository status and commit history
+- Working with local and remote repositories
+- Connecting repositories to GitHub using SSH
+- SSH key generation and authentication
+- Pushing and pulling changes
+- Remote repositories and upstream branches
+- Creating and switching between branches
+- Merging branches
+- Resolving merge conflicts
+- Restoring and unstaging changes
+- Undoing commits with `reset` and `revert`
+- Using `git log` and `git reflog`
+- Temporarily storing changes with `git stash`
+- Rebasing and squashing commits
+- Cherry-picking commits between branches
+- Ignoring files and directories with `.gitignore`
+- Amending previous commits
+- Pull requests and basic code review workflows
+
+### 🛠️ Git Practice
+
+Alongside the lessons, I created repositories and practiced common Git workflows from the command line, including:
+
+- Creating local repositories and connecting them to GitHub
+- Configuring SSH authentication with GitHub
+- Staging, committing and pushing changes
+- Creating feature branches and merging them into `main`
+- Creating and reviewing pull requests
+- Setting upstream branches for new remote branches
+- Creating and resolving merge conflicts
+- Undoing local and shared changes safely
+- Using `git stash` to temporarily store unfinished work
+- Using `reflog` to understand and recover previous Git states
+- Squashing commits with interactive rebase
+- Cherry-picking individual commits between branches
+- Cleaning up local and remote branches
 
 ## 🎯 Goal
 
