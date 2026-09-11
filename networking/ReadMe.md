@@ -3,16 +3,16 @@
 ### Computer Networks - A group of devices connected to each other allowing them to share information and resources
 
 #### LAN - Local Are Network:
-- Connects devices within a small area i.e home, office
+- Connects devices within a small area i.e. home, office
 - Allows them to communicate and share resources like printers and shared files
 - Used to provide internet access in a small area
 
 
 #### WAN - Wide Area Network:
-- Connects devices in a larger area i.e internet
+- Connects LAN's across large geographical areas i.e. internet
 - Connects multiple LANs, enable data transfer over long distances
 
-Networks are the foundation that enables communication between devices. They also allow us to share resources, I.e accessing shared fles at work.
+Networks are the foundation that enables communication between devices. They also allow us to share resources, i.e. accessing shared files at work.
 
 When you use an application, your device sends data to a server over the network. The server processes this data and sends it back
 
@@ -37,7 +37,7 @@ Connects multiple devices within the same network, ensuring smoot data flow betw
 - Unique identifier assigned to a network interface, used to identify where to send IP traffic on a network
 
 
-- Allows devices to locate and communicate with eachother.
+- Allows devices to locate and communicate with each other.
 
 #### IPv4
 - 192 .168.0.5 32 bit address
@@ -50,13 +50,13 @@ Without IP addresses devices wouldn't know where to receive or send data
 
 ### Mac Address
 
-- Unique identifier assigned to a network interface
+- A device can have multiple network interfaces, and each interface can have its own MAC address.
 - Each device on a network has its own unique mac address
 - 48-bit address: 00: 1A: 2B: 3C: 4D: 5E hexadecimal format
 - Operates at the data link layer in OSI
 - Helps device identification within a local network and help with network communication and security
 
-Data is transferred in packets. A packet contains source and destination ip so the network knows where the packet is coming from and where it is ending up. The packet is then placed in a frame containing a mac address and hops to the next device. The frame is removed and the packets destination ip is examined decides the next hop and uses the next hop's mac address to deliver it until the packet reaches it's destination.
+Data is transferred in packets. A packet contains source and destination IP so the network knows where the packet is coming from and where it is ending up. The packet is then placed in a frame containing source and destination mac address and hops to the next device. The frame is removed and the packets destination ip is examined decides the next hop and uses the next hop's mac address to deliver it until the packet reaches it's destination.
 
 ### Ports
 
