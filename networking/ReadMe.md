@@ -94,5 +94,27 @@ Data is transferred in packets. A packet contains source and destination IP so t
 - Prior communication not required
 - Fast because no connection set up and no error checking making it less reliable, used for streaming, online gaming
 - Anything DNS related
-- 
 
+## OSI - Open Systems Interconnection
+- This is a 7 layer model used to understand how data travels from one device/application to another across a network
+
+### Layer 7 - Application Layer
+- This is where network services are given directly to applications. i.e. HTTP, SSH, DNS
+
+### Layer 6 - Presentation Layer
+- This is where data is translated to a readable format and where encryption is also handled. i.e. SSH IMAP
+
+### Layer 5 - Session Layer
+- This is the layer that can manage many sessions. i.e. sockets
+
+### Layer 4 - Transport Layer
+- End to end communication is data integrity is handled. i.e. TCP UDP
+
+### Layer 3 - Network Layer
+- Where routing and forwarding of data packets is managed. i.e. IP ICMP
+
+### Layer 2 - Data Link
+- Node to node transfer and error detection is managed. i.e. ethernet, switches
+
+### Layer 1 - Physical Layer
+- The physical connection between devices. i.e. fibre, wireless, hubs
