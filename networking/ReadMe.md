@@ -118,3 +118,18 @@ Data is transferred in packets. A packet contains source and destination IP so t
 
 ### Layer 1 - Physical Layer
 - The physical connection between devices. i.e. fibre, wireless, hubs
+
+## DNS - Domain Name System
+- DNS translates a domain name, like google.com, to an IP address. Sometimes that name can point to multiple IP addresses.
+
+### Name Server
+- Server that stores DNS records for a domain and answers queries for that domain
+
+#### Recursive Name Server
+- Recursive name server. This takes a client's DNS query, checks its cache, and if needed, walks the hierarchy root to TLD to authoritative, returns the answer, and caches it.
+
+#### Authoritative Name Server
+- Holds the authoritative DNS records for a zone and provides final DNS answers like A records with IP addresses
+
+#### Zone Files
+- Zone files. A text file containing the DNS records for a zone served by authoritative servers.
