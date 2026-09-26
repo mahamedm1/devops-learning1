@@ -133,3 +133,12 @@ Data is transferred in packets. A packet contains source and destination IP so t
 
 #### Zone Files
 - Zone files. A text file containing the DNS records for a zone served by authoritative servers.
+
+#### Records
+- DNS records are the actual data entries that describe domain information.
+- A records map hostnames to IPv4 addresses
+- AAAA records map hostnames to IPv6 addresses
+- CNAME is an alias to another name
+- MX is mail servers
+- NS is authoritative name servers for the zone
+- TXT holds text data for things like verification and security
