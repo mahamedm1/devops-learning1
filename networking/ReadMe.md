@@ -139,6 +139,6 @@ Data is transferred in packets. A packet contains source and destination IP so t
 - A records map hostnames to IPv4 addresses
 - AAAA records map hostnames to IPv6 addresses
 - CNAME is an alias to another name
-- MX specifies what mail server the domain uses
+- MX specifies what mail servers are responsible for receiving mail for the domain 
 - NS is authoritative name servers for the zone
 - TXT holds text data for things like verification and security
