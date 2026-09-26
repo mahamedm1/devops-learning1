@@ -157,3 +157,14 @@ Data is transferred in packets. A packet contains source and destination IP so t
 - Your computer now has an IP address it can use to begin connecting to the website.
 In simple terms:
 Computer → DNS Resolver → Root → .com TLD → Authoritative Name Server → IP address → Resolver → Computer
+
+
+### Domain Registrar
+- Allows you to register and manage a domain name.
+- Keeps track of who has registered the domain.
+- Allows you to specify which name servers the domain should use.
+  
+### DNS Hosting Provider
+- Hosts and manages the DNS records for your domain.
+- Provides authoritative name servers that answer DNS queries for the domain.
+- Stores records such as A, AAAA, CNAME, MX and TXT.
