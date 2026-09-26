@@ -142,3 +142,18 @@ Data is transferred in packets. A packet contains source and destination IP so t
 - MX specifies what mail servers are responsible for receiving mail for the domain 
 - NS is authoritative name servers for the zone
 - TXT holds text data for things like verification and security
+
+
+### DNS Resolution – Finding a Domain's IP Address
+- When you enter a domain name such as bbc.com, your computer needs to find the IP address associated with that domain.
+- Your computer first checks whether it already has the DNS answer cached.
+- If it doesn't, it sends a DNS query to a recursive DNS resolver.
+- The resolver checks its own cache first.
+- If the answer isn't cached, the resolver works through the DNS hierarchy:
+  1. Root name server → tells the resolver which TLD name servers handle .com.
+  2. TLD name server (.com) → tells the resolver which authoritative name servers handle bbc.com.
+  3. Authoritative name server → provides the requested DNS record, such as an A record containing an IPv4 address.
+- The resolver sends the answer back to your computer and usually caches it for future queries.
+- Your computer now has an IP address it can use to begin connecting to the website.
+In simple terms:
+Computer → DNS Resolver → Root → .com TLD → Authoritative Name Server → IP address → Resolver → Computer
