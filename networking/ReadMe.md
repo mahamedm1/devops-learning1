@@ -214,4 +214,9 @@ BGP - Border Gateway Protocol
 - Maps private IP address to one of many IP addresses from a pool of public IP address
 
 ### PAT - Port Address Translation
-- Allows multiple on a local network to a single IP address with differenyt port numbers
+- Allows multiple on a local network to a single IP address with different port numbers
+
+NAT is important as:
+- It conserves IP address, not many are left
+- Enhances network security
+- Simplifies network design and management
