@@ -168,3 +168,43 @@ Computer → DNS Resolver → Root → .com TLD → Authoritative Name Server �
 - Hosts and manages the DNS records for your domain.
 - Provides authoritative name servers that answer DNS queries for the domain.
 - Stores records such as A, AAAA, CNAME, MX and TXT.
+
+## Routing
+- Routing is how data finds it's way across networks. Ensuring data reaches it's destination efficiently.
+- Routers determine the best path using round tables to make decisions
+- This enhances network optimisation as your packets take efficient pathways, reducing latency -> faster
+
+### Static Routing
+- Routes manually set by network admins. Reliable but if the route changes you must update manually
+
+### Dynamic Routing
+- Uses algorithms to automatically find the best path for data. Data moves efficiently even if network conditions change
+
+Routing protocols use algorithms automate the process of determining the best route for data to travel across a network
+
+OSPF - Open Shortest Path First
+- Finds shortest path for data to travel
+- Can quickly recalculate routes
+  
+
+BGP - Border Gateway Protocol
+- Uses path vector mechanism
+
+
+## Subnetting
+= Dividing one large networks into smaller ones 
+
+### CIDR Networks - Classless Inter-Domain Routing
+- A method for allocating IP address and routing IP packets
+
+### Subnet Masks 
+- Tell a device which part of an IP address is the network and which part is the host
+
+## NAT - Network Address Translation
+- Translates private address to public address
+- NAT Process:
+- Internal device uses private address
+- Router translates prisate ip to public ip
+- Allows devices to communicate with external network
+
+### 
