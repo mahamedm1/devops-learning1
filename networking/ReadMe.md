@@ -207,4 +207,11 @@ BGP - Border Gateway Protocol
 - Router translates prisate ip to public ip
 - Allows devices to communicate with external network
 
-### 
+### Static NAT
+- Maps single private IP address to single public IP address
+
+### Dynamic NAT 
+- Maps private IP address to one of many IP addresses from a pool of public IP address
+
+### PAT - Port Address Translation
+- Allows multiple on a local network to a single IP address with differenyt port numbers
