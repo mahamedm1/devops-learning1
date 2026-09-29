@@ -155,3 +155,33 @@ The command returned the public IPv4 address of my EC2 instance, confirming that
 ### DNS Verification
 
 ![DNS Verification](screenshots/dns-dig-test.png)
+
+## Configuring HTTPS with Certbot
+
+After configuring DNS, the website was accessible using my domain over HTTP.
+
+To secure the connection, I configured HTTPS using **Certbot** and a free TLS certificate from **Let's Encrypt**.
+
+I first allowed inbound HTTPS traffic on **port 443** in the EC2 Security Group.
+
+I then installed Certbot and the NGINX plugin:
+
+```bash
+sudo apt install certbot python3-certbot-nginx -y
+```
+
+I requested and configured the TLS certificate for my domain using:
+
+```bash
+sudo certbot --nginx -d mmahamud.com
+```
+
+Certbot obtained a certificate from Let's Encrypt and automatically configured NGINX to use it.
+
+After completing the setup, the website was accessible securely at:
+
+```text
+https://mmahamud.com
+```
+
+HTTP requests to the website were also redirected to HTTPS.
