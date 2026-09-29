@@ -13,32 +13,33 @@ The purpose of this project was to put my networking knowledge into practice and
 
 The project follows this flow:
 
-                    User
-                      |
-                      | https://mmahamud.com
-                      v
-               Cloudflare DNS
-                      |
-                      | A Record
-                      v
-               EC2 Public IPv4
-                      |
-                      v
-              Security Group
-                /         \
-          HTTP :80      HTTPS :443
-              |             |
-              |             v
-              |           NGINX
-              |             |
-              |             v
-              +------> Web Page
-
+                 User / Browser
+                       |
+                       v
+                Cloudflare DNS
+                       |
+                    A Record
+                       |
+                       v
+                EC2 Public IPv4
+                       |
+                       v
+                Security Group
+                  /          \
+             HTTP :80      HTTPS :443
+                 \          /
+                  \        /
+                     NGINX
+                       |
+                       v
+                    Web Page
 When a user enters my domain name, DNS resolves the domain to the public IPv4 address of my EC2 instance.
 
 The browser then connects to the EC2 instance. The AWS Security Group controls which ports are accessible. HTTP traffic on port 80 is redirected to HTTPS, while HTTPS traffic uses port 443.
 
-NGINX listens for web requests and serves the webpage back to the user's browser.
+For HTTPS connections, NGINX presents the TLS certificate to the browser. Once the certificate is verified, a secure encrypted connection is established.
+
+NGINX then receives the web request and serves the webpage back to the user's browser.
 
 ## EC2 Setup
 
