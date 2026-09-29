@@ -50,5 +50,5 @@ I created a key pair during the instance setup so that I could securely connect 
 
 ### EC2 Instance
 
-![EC2 Instance](project/screenshots/ec2-instance.png)
+![EC2 Instance](networking/project/screenshots/EC2-instance.png)
 
