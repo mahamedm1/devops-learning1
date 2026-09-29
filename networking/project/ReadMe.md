@@ -141,4 +141,4 @@ instead of having to remember the EC2 public IP address.
 
 ### Cloudflare DNS Record
 
-![Cloudflare DNS Record](screenshots/cloudflare-dns.png)
+![Cloudflare DNS Record](screenshots/cloudflare-dns-record.png)
