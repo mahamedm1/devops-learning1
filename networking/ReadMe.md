@@ -2,7 +2,7 @@
 
 ### Computer Networks - A group of devices connected to each other allowing them to share information and resources
 
-#### LAN - Local Are Network:
+#### LAN - Local Area Network:
 - Connects devices within a small area i.e. home, office
 - Allows them to communicate and share resources like printers and shared files
 - Used to provide internet access in a small area
