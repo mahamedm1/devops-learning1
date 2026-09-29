@@ -185,3 +185,45 @@ https://mmahamud.com
 ```
 
 HTTP requests to the website were also redirected to HTTPS.
+
+## Testing HTTP and HTTPS
+
+After configuring HTTPS, I used `curl` to verify the HTTP responses from the web server.
+
+I tested the HTTPS connection using:
+
+```bash
+curl -I https://mmahamud.com
+```
+
+The `-I` option tells `curl` to retrieve only the HTTP response headers rather than the full webpage.
+
+The server returned:
+
+```text
+HTTP/1.1 200 OK
+```
+
+This confirmed that the web server was successfully responding to HTTPS requests.
+
+I then tested HTTP using:
+
+```bash
+curl -I http://mmahamud.com
+```
+
+The server returned:
+
+```text
+HTTP/1.1 301 Moved Permanently
+```
+
+The `301` response confirmed that HTTP requests were being redirected to HTTPS.
+
+### HTTPS Test
+
+![HTTPS Curl Test](screenshots/https-curl-test.png)
+
+### HTTP Redirect Test
+
+![HTTP Curl Test](screenshots/http-curl-test.png)
