@@ -112,6 +112,33 @@ This confirmed that:
 - The EC2 instance was reachable over the internet.
 - NGINX was running successfully.
 - Port 80 was accessible.
-- The Security Group was allowing HTTP traffic to reach the server.
+- The security group was allowing HTTP traffic to reach the server.
 
 ![NGINX Welcome page](screenshots/nginx-homepage.png)
+
+
+## DNS Configuration
+
+After confirming that the NGINX web server was accessible through the EC2 public IP address, I configured my custom domain using Cloudflare DNS.
+
+I created an **A record** with the following configuration:
+
+- **Type:** A
+- **Name:** `@`
+- **IPv4 address:** EC2 public IPv4 address
+- **Proxy status:** DNS only
+- **TTL:** Auto
+
+An A record maps a domain name to an IPv4 address. In my case, `mmahamud.com` points to the public IPv4 address of my EC2 instance.
+
+This allows users to access the web server using:
+
+```text
+mmahamud.com
+```
+
+instead of having to remember the EC2 public IP address.
+
+### Cloudflare DNS Record
+
+![Cloudflare DNS Record](screenshots/cloudflare-dns.png)
