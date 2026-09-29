@@ -136,9 +136,22 @@ This allows users to access the web server using:
 ```text
 mmahamud.com
 ```
-
 instead of having to remember the EC2 public IP address.
 
 ### Cloudflare DNS Record
 
 ![Cloudflare DNS Record](screenshots/cloudflare-dns-record.png)
+
+## Verifying DNS
+
+After configuring the A record, I verified that the domain was resolving to the correct EC2 public IPv4 address using:
+
+```bash
+dig +short mmahamud.com
+```
+
+The command returned the public IPv4 address of my EC2 instance, confirming that the DNS configuration was working correctly. I used the +short option so it only displays the IP address rather than the full DNS query.
+
+### DNS Verification
+
+![DNS Verification](screenshots/dns-dig-test.png)
