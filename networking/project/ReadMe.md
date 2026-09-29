@@ -98,3 +98,18 @@ I then installed NGINX:
 ```bash
 sudo apt install nginx -y
 ```
+
+NGINX is the web server used in this project. It listens for incoming web requests and sends the requested web content back to the user's browser.
+I verified that NGINX was running using:
+
+```
+systemctl status nginx
+```
+
+### Testing NGINX
+Before configuring my domain, I tested the web server directly using the EC2 instance's public IPv4 address. The default **Welcome to nginx!** page loaded successfully.
+This confirmed that:
+- The EC2 instance was reachable over the internet.
+- NGINX was running successfully.
+- Port 80 was accessible.
+- The Security Group was allowing HTTP traffic to reach the server.
