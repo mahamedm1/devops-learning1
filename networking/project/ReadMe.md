@@ -227,3 +227,20 @@ The `301` response confirmed that HTTP requests were being redirected to HTTPS.
 ### HTTP Redirect Test
 
 ![HTTP Curl Test](screenshots/http-curl-test.png)
+
+
+## How the Request Flows
+
+When a user visits `https://mmahamud.com`, the following process takes place:
+
+1. The browser performs a DNS lookup for `mmahamud.com`.
+2. The DNS A record resolves the domain to the public IPv4 address of my EC2 instance.
+3. The browser connects to the EC2 instance using **port 443** for HTTPS.
+4. The EC2 Security Group allows the HTTPS traffic to reach the server.
+5. NGINX presents the TLS certificate issued by Let's Encrypt.
+6. The browser verifies the certificate and establishes an encrypted TLS connection.
+7. The browser sends the HTTP request through the encrypted connection.
+8. NGINX processes the request and returns the webpage.
+9. The browser receives the response and renders the webpage.
+
+If a user instead visits `http://mmahamud.com` on port 80, NGINX redirects the request to the HTTP version of the website. So either way the user ends up with a secure connection.
