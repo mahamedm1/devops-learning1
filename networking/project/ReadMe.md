@@ -114,4 +114,4 @@ This confirmed that:
 - Port 80 was accessible.
 - The Security Group was allowing HTTP traffic to reach the server.
 
-!NGINX Welcome page](screenshots/nginx-homepage.png)
+![NGINX Welcome page](screenshots/nginx-homepage.png)
