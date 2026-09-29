@@ -81,8 +81,20 @@ I first restricted the permissions of my private key:
 chmod 400 networking-module.pem
 ```
 I then connected to the EC2 instance using:
-
+```
 ssh -i networking-module.pem ubuntu@ec2-xx-xx-xx-xx.eu-west-1.compute.amazonaws.com
-
+```
 -> **Security Note:** I have intentionally not included my `.pem` private key in this repository because it contains sensitive authentication credentials.
 
+## Installing NGINX
+
+After connecting to the EC2 instance through SSH, I updated Ubuntu's package list:
+
+```bash
+sudo apt update
+```
+I then installed NGINX:
+
+```bash
+sudo apt install nginx -y
+```
