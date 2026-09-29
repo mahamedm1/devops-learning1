@@ -244,3 +244,39 @@ When a user visits `https://mmahamud.com`, the following process takes place:
 9. The browser receives the response and renders the webpage.
 
 If a user instead visits `http://mmahamud.com` on port 80, NGINX redirects the request to the HTTP version of the website. So either way the user ends up with a secure connection.
+
+## Troubleshooting
+
+### SSH Private Key Permissions
+
+When I initially attempted to connect to the EC2 instance through WSL, SSH rejected my `.pem` private key because its permissions were too open.
+
+The key was stored inside my Windows filesystem, where `chmod 400` did not apply the Linux permissions as expected.
+
+To resolve this, I moved the private key into my WSL home directory and changed its permissions:
+
+```bash
+chmod 400 networking-module.pem
+```
+
+After restricting the key so that only my user could read it, I was able to successfully authenticate with the EC2 instance using SSH.
+
+This helped me understand why SSH requires private keys to have restrictive permissions and the differences between file permissions on Windows-mounted directories and the native Linux filesystem in WSL.
+
+## What I Learned
+
+This project helped me put networking theory into practice by working with:
+
+- DNS and domain resolution
+- AWS EC2 and Security Groups
+- SSH and Linux servers
+- NGINX web servers
+- HTTP, HTTPS and TLS
+- Network troubleshooting using `dig` and `curl`
+
+- ## Future Improvements
+
+Future improvements for this project include:
+
+- Assigning an Elastic IP so the server keeps a static public IP address.
+- Replacing the default NGINX page with my own portfolio/application.
