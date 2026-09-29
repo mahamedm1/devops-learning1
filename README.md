@@ -13,7 +13,7 @@ I'm using this repository to document what I learn, practice core concepts, and 
 | 🐧 Linux          | ✅ Completed   |
 | 📜 Bash Scripting | ✅ Completed    |
 | 🔀 Git            | ✅ Completed    |
-| 🌐 Networking     | ⏳ Upcoming     |
+| 🌐 Networking     | ✅ Upcoming     |
 | 🐳 Docker         | ⏳ Upcoming     |
 | ☁️ AWS            | ⏳ Upcoming     |
 | 🏗️ Terraform     | ⏳ Upcoming     |
