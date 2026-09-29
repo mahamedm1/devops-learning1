@@ -68,4 +68,4 @@ This helped me understand how security groups act as virtual firewalls for EC2 i
 
 ### Security Group Inbound Rules
 
-![Security Group](screenshots/security-group.png)
+![Security Group](screenshots/security-groups.png)
