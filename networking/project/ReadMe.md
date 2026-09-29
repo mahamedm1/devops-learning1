@@ -49,6 +49,5 @@ An EC2 instance is a virtual machine running on AWS infrastructure. The instance
 I created a key pair during the instance setup so that I could securely connect to the server using SSH.
 
 ### EC2 Instance
-
-![EC2 Instance](project/screenshots/EC2-instance.png)
+![EC2 Instance](screenshots/EC2-instance.png)
 
