@@ -1,4 +1,4 @@
-# Networking Project — EC2, NGINX, DNS & HTTPS
+# Networking Project - EC2, NGINX, DNS & HTTPS
 
 ## Project Overview
 
