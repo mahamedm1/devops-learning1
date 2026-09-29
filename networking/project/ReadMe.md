@@ -51,3 +51,21 @@ I created a key pair during the instance setup so that I could securely connect 
 ### EC2 Instance
 ![EC2 Instance](screenshots/EC2-instance.png)
 
+
+## Security Group Configuration
+
+I configured the EC2 Security Group to control which inbound traffic was allowed to reach my server.
+
+The following inbound rules were configured:
+
+- **SSH (Port 22)** — Restricted to my public IP for secure administrative access to the EC2 instance.
+- **HTTP (Port 80)** — Allowed from `0.0.0.0/0` so that users can access the website over HTTP.
+- **HTTPS (Port 443)** — Allowed from `0.0.0.0/0` so that users can securely access the website over HTTPS.
+
+Port 22 was restricted because SSH provides administrative access to the server, whereas ports 80 and 443 need to be publicly accessible for web traffic.
+
+This helped me understand how security groups act as virtual firewalls for EC2 instances by controlling which traffic is allowed to reach the server.
+
+### Security Group Inbound Rules
+
+![Security Group](screenshots/security-group.png)
