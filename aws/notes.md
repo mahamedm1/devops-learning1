@@ -108,3 +108,11 @@
 - 443 HTTPS - access secured websites
 - 53: DNS - for DNS queries and resolving
 - 3389: RDP - Log into a windows instance
+
+### Elastic IP
+
+- Public IPv4 address that you can own as long as its not deleted
+- Only charged when they are not in use
+- Only can attcach to one instance at a time
+- They are very useful if you have external services that need to point to your server using a static IP
+- As DNS resolvers won't have to keep resolving for new IP's hence users/services won't lose access temporarily
