@@ -77,3 +77,10 @@
 - Shows which AWS services a user, group or role has accessed and when.
 - Helps identify unused permissions.
 - Useful for applying the Principle of Least Privilege.  
+
+## EC2 - Elastic Compute Cloud
+
+- Essentially renting a virtual machines on AWS - EC2
+- It can store data on virtual drives - EBS
+- It can distribute data traffic evenly amongst other servers
+- Scaling happens automatically. You pay for what you use.
