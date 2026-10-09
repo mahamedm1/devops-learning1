@@ -84,3 +84,12 @@
 - It can store data on virtual drives - EBS
 - It can distribute data traffic evenly amongst other servers
 - Scaling happens automatically. You pay for what you use.
+
+### EC2 Instance Types
+
+- General Purpose: Genereal workloads
+- Compute Optimised: If you need lots of processing power. It gives you extra CPU
+= Memory Optimised: When your application needs a lot of memory/RAM
+- Strorage OPtimised: Designed for fast and high throuput storage that require quick access to storage
+- Accelerated Computing: For enhanced performance
+- HPC Optimised: Designed for intensive computer task requiring a lot of power
