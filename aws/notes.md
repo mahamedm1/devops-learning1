@@ -93,3 +93,18 @@
 - Strorage OPtimised: Designed for fast and high throuput storage that require quick access to storage
 - Accelerated Computing: For enhanced performance
 - HPC Optimised: Designed for intensive computer task requiring a lot of power
+
+## Security Groups
+
+- They control how traffic is allowed in or out of an EC2 instance
+- They only contain allow rules
+
+### Ports
+
+- 22: SSH - Log into linux instance
+- 21: FTP - Upload files into a file share
+- 22: SFTP - Upload files using SSH
+- 80: HTTP - access unsecured websites
+- 443 HTTPS - access secured websites
+- 53: DNS - for DNS queries and resolving
+- 3389: RDP - Log into a windows instance
