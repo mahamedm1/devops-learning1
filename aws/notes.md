@@ -115,4 +115,23 @@
 - Only charged when they are not in use
 - Only can attcach to one instance at a time
 - They are very useful if you have external services that need to point to your server using a static IP
-- As DNS resolvers won't have to keep resolving for new IP's hence users/services won't lose access temporarily
+- As DNS resolvers won't have to keep resolving for new IP's hence users/services won't lose access temporaril
+
+## Storage
+
+### EBS Volume - Elastic Block Store
+
+- An EBS is a network drive you can attach to your instance whilst it's running
+- They are like a network USB stick
+- They persist even when the instance stops. Basically all the data remains even when instance stops.
+
+### AMI - Amazon Machine Image
+
+- Customisation of an EC2 instance
+- You can use an AMI to save time launching an instance with pre-made configurations
+
+
+
+
+
+
