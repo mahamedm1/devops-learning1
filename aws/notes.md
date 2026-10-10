@@ -142,7 +142,36 @@
 - Scalability is when an application can handle greater loads by adapting
 - Vertical Scalability: Scaling up by making your server bigger - more cpu or ram
 - Horizontal Scalability: Adding more instances to share the load
+- Horizontal Scalability is tied into high availability whereas vertical is not 
+- High availability is running multiple instances for the same application/service on multiple AZ's
 
+### Load Balancers
+- They distribute requests evenly across available instances by forwarding them downstream
+- Application Load Balancer - designed for websocket, TCP, SSL, http and https
+- Network Load Balancer - designed for high performance and low latency apps
+
+
+### ALB 
+- Operates at layer 7 (HTTP)
+- Load balancing to multiple HTTP apps across machines
+- Load balancing to mutliple apps on the same machine - containers
+- Supports redirects 
+
+### NLB
+- Operates layer 4 (TCP, UDP)
+- Less latency, used if you need faster response times
+
+
+### Sticky Sessions
+- Sticky sessions ensure a client is redirected to the same intance behind a load balancer
+- Useful for session heavy apps
+- But can overload an instance if too many users are redirected
+
+
+### Health Checks
+- Load balancers perform health checks so they prevent sending requests to instances that are down
+- It sends a request to a certain port and route, /health is common
+- If the response is not 200 (OK) then the instance is not healthy
 
 
 
