@@ -173,5 +173,30 @@
 - It sends a request to a certain port and route, /health is common
 - If the response is not 200 (OK) then the instance is not healthy
 
+### SSL Certificates - Secure Sockets Layer
+- Allows traffic between your clients and your load balancer to be encrypted in transit
+- SSL certificates are issued by certificate authorities
+- They have an expiration date
+
+#### SNI - Sever Name Indication
+- Allows multiple ssl certificates to be loaded on the same web server
+- Only works with NLB ALB cloudfront
+
+
+### Auto Scaling Group
+- ASG allows your instance to scale in or out depending on usage
+- Automatically registers new instances to a new load balancer
+- Minimum capacity - Least number of instacnes u want runnign
+- Desired capacatiy - The target number you want ot have running unless osmething chnages 
+- Maximum capacity - Most number of instances, dont want more becasue higher cost
+- Creates a new instance using the AMI configurations
+
+
+
+
+
+
+
+
 
 
