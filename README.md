@@ -13,8 +13,8 @@ I'm using this repository to document what I learn, practice core concepts, and 
 | 🐧 Linux          | ✅ Completed   |
 | 📜 Bash Scripting | ✅ Completed    |
 | 🔀 Git            | ✅ Completed    |
-| 🌐 Networking     | ✅ Upcoming     |
-| 🐳 Docker         | ⏳ Upcoming     |
+| 🌐 Networking     | ✅ Completed    |
+| 🐳 Docker         | ✅ Completed     |
 | ☁️ AWS            | ⏳ Upcoming     |
 | 🏗️ Terraform     | ⏳ Upcoming     |
 | 🔄 CI/CD          | ⏳ Upcoming     |
@@ -155,6 +155,65 @@ Alongside the lessons, I created repositories and practiced common Git workflows
 - Squashing commits with interactive rebase
 - Cherry-picking individual commits between branches
 - Cleaning up local and remote branches
+
+
+## 🌐 Networking
+
+After learning Git, I moved into networking to understand how devices communicate, how data travels across networks, and how networking concepts apply to cloud infrastructure.
+
+### Topics Covered
+
+- Network fundamentals and types (LAN and WAN)
+- IP addressing (IPv4, public and private IP addresses)
+- Static and dynamic IP addresses
+- MAC addresses and Ethernet frames
+- Routers and switches
+- TCP and UDP protocols
+- TCP three-way handshake
+- OSI and TCP/IP models
+- Ports and common network protocols
+- HTTP and HTTPS
+- DNS and the DNS resolution process
+- DNS records (A, AAAA, CNAME, MX)
+- Subnets and subnet masks
+- CIDR notation and subnet calculations
+- Default gateways and routing
+- Network Address Translation (NAT)
+- SSH and remote access
+- Firewalls and network security
+- How a browser communicates with a web server
+
+### 🛠️ Networking Practice
+
+Alongside the lessons, I reinforced networking concepts through practical exercises, including:
+
+- Breaking down the DNS resolution process from browser to authoritative name server
+- Practising subnet calculations using CIDR notation
+- Identifying network and host portions of IP addresses
+- Understanding how routers forward packets between networks
+- Exploring how NAT translates private IP addresses to public IP addresses
+- Connecting to remote Linux servers using SSH
+- Configuring DNS records to point a domain to a web server
+- Deploying an NGINX web server on an AWS EC2 instance
+- Troubleshooting network connectivity and SSH access
+
+---
+
+## 🐳 Docker
+
+After building a foundation in networking, I moved into Docker to understand containerisation and how applications can be packaged and deployed consistently across different environments.
+
+### Topics Covered
+
+- Containerisation and its benefits
+- Containers vs virtual machines
+- Docker architecture and Docker Engine
+- Docker images and containers
+- Docker Hub and image registries
+- Dockerfile instructions (`FROM`, `WORKDIR`, `COPY`, `RUN`, `CMD`)
+- Building Docker images
+- Running and managing containers
+- Container lifecycle
 
 ## 🎯 Goal
 
