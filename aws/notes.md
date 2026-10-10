@@ -130,7 +130,18 @@
 - Customisation of an EC2 instance
 - You can use an AMI to save time launching an instance with pre-made configurations
 
+### EFS - Elastic File System
 
+- Managed by the network file system that can be mounted on many EC2 instances 
+- Shared storage for multiple instances
+- Highly available
+- Expensive
+
+## Load Balancing & Scalability
+
+- Scalability is when an application can handle greater loads by adapting
+- Vertical Scalability: Scaling up by making your server bigger - more cpu or ram
+- Horizontal Scalability: Adding more instances to share the load
 
 
 
