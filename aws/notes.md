@@ -191,12 +191,34 @@
 - Maximum capacity - Most number of instances, dont want more becasue higher cost
 - Creates a new instance using the AMI configurations
 
+## Containers
+
+### Docker
+
+- Docker packages apps with relevant dependencies and libraries, so they can be run on any OS
+- Containers are lightwieght as they dont have their own OS so they are much faster to start
+- Docker image is a blueprint for your app containing everything to run
+- Images are stored in docker repos like amazon ecr or docker hub
+- docker containers share kernel
+- docker daemon manages containers
+- containers better are faster and lghtweigt since dont need own os, less cpu and memory
+- portable- can run on any os supporting docker
 
 
+### Virtual Machine
+- VM's are virtual systems mimicking hardware
+- Each vm runs its own OS 
+- Hypervisor software manahging multiple vm;s on the local machine and gets resources on the host machine
+- Runs its own OS, large and slow. Resource usage is higher
 
+## Serverless
+- Developers dont have to manage servers 
+- They deploy code and functions
+- You can focus on building your application without worrying about the infrastructure
 
-
-
-
-
+#### Lambda
+- Virtual functions so no server to manage, runs only on demand not continuously
+- Easy Pricing and scaling is automated, no need to be configured
+- Integrated with many programming languages
+- Easy monitoring through AWS Cloudwatch
 
