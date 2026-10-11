@@ -275,3 +275,39 @@
 - They IPv6 addresses are not translated like the IPv4
 - Only can intitiate outbound connections
 
+
+## DNS ROUTE 53
+
+- AWS mangaed DNS service
+- Authoritative so you can update DNS records
+- Is a domain registrar
+- Can check health of your resources
+
+### Hosted Zones
+- Public Hosted Zones: Contain records that specify how to route traffic on the internet
+- Private Hosted Zones: Contain records how you route traffic within one or more VPC's
+
+### TTL - Time To lIve
+- Determines how long a DNS record can be cached before it needs to be checked again
+- Low TTL: DNS changes picked up fast but will require more NDS queries = more money
+- High TTL: Reduces DNS queries but changes will take longer to reach users
+
+### CNAME 
+- DNS record that maps one domain name to another domain name 
+- Cant be used for root domains like example.com as other DNS records are used such as NS records they cant co-exist with CNAME
+
+### ALIAS
+- Allows your domain to point to supported AWS resources or another Route 53 record.
+- Can be used at the root domain
+
+### Routing Policies
+- Simple: Route traffic to a single resource
+- Weighted: Control the percentage of requests that go to each specific resource
+- Latency: Redirect to the reasource that has the least latency close to us
+- Geolocation: Allows you to direct traffic based on the users physical location
+- Geoproximity: Allows you to adjust how muhc tarffic goes to a resource based on bias value 
+- IP-Based Routing: Routing based on clients IP addresses
+- Multi-Value Routing: Used when routing traffic to multiple resources
+
+Domain Registars allow you to purchase domains and register them.
+DNS services hosts and manages DNS records, allowing domain names to resolve to the correct destinations
