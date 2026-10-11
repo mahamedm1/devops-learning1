@@ -233,3 +233,17 @@
 - Isolated network in the cloud within AWS where you deploy your EC2 instane for example
 - 5 VPCs per AWS Region by default (can be increased).
 - VPCs and other networks that need to communicate should have non-overlapping IP ranges to prevent routing conflicts.
+
+### Internet Gateway
+- Allows resources connected to your vpc access the internet
+- You create it manually when you create your vpc, dodesn't happen by default
+- One IG can be connected to one VPC
+- IG's alone can't give acces to interenet, subnets must be routed using route tables 
+
+### Bastion Hosts
+- An EC2 instance in a public subnet that acts as an entry point to private EC2 instances
+- Allows admins to access private instances without exposing them to the internet
+- It works by SSH'ing to the bastion host and then SSH to your private instance
+- Security group from bastian host must allow inbound from internet
+- Securtiy group of EC2 instance must allow inbound SSH from the bastion host 
+
