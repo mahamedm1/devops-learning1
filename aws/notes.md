@@ -222,3 +222,14 @@
 - Integrated with many programming languages
 - Easy monitoring through AWS Cloudwatch
 
+
+## AWS Networking
+
+### CIDR - Classless Inter-Domain Routing
+- A method used to allocate IP addresses
+- Contains a base IP and a subnet mask 
+
+### VPC - Virtual Private Cloud
+- Isolated network in the cloud within AWS where you deploy your EC2 instane for example
+- 5 VPCs per AWS Region by default (can be increased).
+- VPCs and other networks that need to communicate should have non-overlapping IP ranges to prevent routing conflicts.
