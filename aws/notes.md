@@ -234,6 +234,14 @@
 - 5 VPCs per AWS Region by default (can be increased).
 - VPCs and other networks that need to communicate should have non-overlapping IP ranges to prevent routing conflicts.
 
+
+### VPC Peering
+- Allows two VPC's to communicate privately with eachother usnig their private ip addersses
+- Occurs if you have resources in two separate VPC's that need to communicate with eachother
+
+
+
+
 ### Internet Gateway
 - Allows resources connected to your vpc access the internet
 - You create it manually when you create your vpc, dodesn't happen by default
@@ -246,4 +254,24 @@
 - It works by SSH'ing to the bastion host and then SSH to your private instance
 - Security group from bastian host must allow inbound from internet
 - Securtiy group of EC2 instance must allow inbound SSH from the bastion host 
+
+### NAT Gateway - Network Access Translation
+- Allows EC2 instances in private subnets to access internet by ,mapping their private IP to a public one without allowing inbound internet traffic
+- Typically deployed in a public subnet with an elastic IP and route to Internet Gateway
+- Proivate subnet route tables send internet bound traffic to the NAT gateway 
+- No security groups used 
+
+### NACL - Network Access Control List
+- Like a firewall controlling traffic to and from subnets
+- One NACL per subnet
+- Runs on a determined set of rules you define
+- Unlike security groups, you have to define inbound and outbound traffic
+- The rule with the lower number will have precedence. E.g. rule 1 will be listened to first
+- Last rule ends with an * and denies a request in case of no rule match 
+- They're good if you want to block specific IP address at subnet level
+
+### Egress-Only Internet Gateway
+- Allows instances in your VPC outbound connections over IPv6 while preventing internet connections back to the instance
+- They IPv6 addresses are not translated like the IPv4
+- Only can intitiate outbound connections
 
