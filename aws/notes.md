@@ -309,5 +309,14 @@
 - IP-Based Routing: Routing based on clients IP addresses
 - Multi-Value Routing: Used when routing traffic to multiple resources
 
+### Domain Regsitars vs DNS Service
 Domain Registars allow you to purchase domains and register them.
 DNS services hosts and manages DNS records, allowing domain names to resolve to the correct destinations
+
+### CloudFront
+- AWS's content delivery networks that delivers websites, videos and images so users with low latency by caching content at edge locations across the globe
+- A user requests content from a website.
+- The request reaches a nearby CloudFront edge location.
+- Cache hit: If the content is cached, CloudFront returns it immediately.
+- Cache miss: CloudFront retrieves the content from the origin server (e.g. S3 or ALB).
+- CloudFront can cache the response for future requests, depending on its cache configuration.
