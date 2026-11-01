@@ -8,3 +8,10 @@ Terraform is a infrastructure as a code tool that allows you to create, manage a
 ### Desired vs Current State
 - Desired: Is your terraform configuration of things you're trying to implement or deploy. This is what you are trying to achieve.
 - Current: Is what actually exists in your infrastructure. It compares your desired state to its current state and makes the necessary changes to reflect it
+
+## Terraform Init
+- Terraform init initialises a Terraform working directory
+- It configures a backend which decides where the state file will be stored
+- By default, it is stored in a local backend, in a file called terraform.tfstate
+- Alternatively it can be stored in a remote backend such as an AWS S3 Bucket
+
