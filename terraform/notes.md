@@ -15,3 +15,12 @@ Terraform is a infrastructure as a code tool that allows you to create, manage a
 - By default, it is stored in a local backend, in a file called terraform.tfstate
 - Alternatively it can be stored in a remote backend such as an AWS S3 Bucket
 
+## Terraform Plan
+- Used when you make a change to your Terraform configuration
+- Terraform plan will show you what will be changed and how terraform will change it
+- +: creates a resource
+- -: destroys a resource
+- ~: updates a resource
+
+## Terraform Apply
+
