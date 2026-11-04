@@ -26,3 +26,14 @@ Terraform is a infrastructure as a code tool that allows you to create, manage a
 - Generates a new plan which is then executed to bring the infrastructure in line with the terraform configuration 
 - Terraform updates it's state file afterwards to maintain idempotency
 - This is essential as this is what allows Terraform to track and identify the resources it manages
+
+## Terraform Destroy
+- Safely and efficiently destroys resources managed by your terraform configuration
+- Reads the state file and current configuration
+- Generates a destruction plan detailing what to destroy
+- Terraform updates the state file
+
+
+
+
+- 
