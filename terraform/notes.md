@@ -12,8 +12,12 @@ Terraform is a infrastructure as a code tool that allows you to create, manage a
 ## Terraform Init
 - Terraform init initialises a Terraform working directory
 - It configures a backend which decides where the state file will be stored
+- Downloads providers which allows communication to AWS when deploying things through terraform
 - By default, it is stored in a local backend, in a file called terraform.tfstate
 - Alternatively it can be stored in a remote backend such as an AWS S3 Bucket
+
+## Terraform Valid
+- Validates the terraform config files to ensure they are syntactically valid
 
 ## Terraform Plan
 - Used when you make a change to your Terraform configuration
