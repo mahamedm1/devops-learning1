@@ -38,7 +38,14 @@ Terraform is a infrastructure as a code tool that allows you to create, manage a
 - Terraform import allows you to bring existing resources under your terraform management without creating anything from scratch
 - Once you've run the terraform import command, the current state should match the desired state
 
+## Local State Files
+- This when the terraform state file is stored locally by default
+- The state file is used by terraform to track the infrastructure it manages and compares it to you configuration (desired state) and your real infrastructure
+- Easy to set up and suitable for lone projects
+- No backup if your machine loses the files, hard to work collaboratively
 
+## Remote State Files
+- This is when your state files are stored in a remote backend such as AWS S3 
+- Easy to work collaboratively since remote state locking means nobody can apply changes simultaneously
+- It is backed up so is recoverable
 
-
-- 
