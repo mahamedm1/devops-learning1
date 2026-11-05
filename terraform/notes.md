@@ -33,6 +33,11 @@ Terraform is a infrastructure as a code tool that allows you to create, manage a
 - Generates a destruction plan detailing what to destroy
 - Terraform updates the state file
 
+## Terraform Import
+- Used if a resource already exists in a cloud environment you never created it with terraform
+- Terraform import allows you to bring existing resources under your terraform management without creating anything from scratch
+- Once you've run the terraform import command, the current state should match the desired state
+
 
 
 
